@@ -1,5 +1,5 @@
 //
-//  CalculatorState.swift
+//  CalculatorUtils.swift
 //  StupidCalculator
 //
 //  Created by Krishna Kishore Shetty on 9/4/16.
