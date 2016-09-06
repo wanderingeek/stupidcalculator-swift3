@@ -178,7 +178,7 @@ class ViewController: UIViewController {
                 return
             }
             
-            resultLabel.text = String(finalResult)
+            resultLabel.text = String(format: "%.2f", finalResult)
         }
     }
     
