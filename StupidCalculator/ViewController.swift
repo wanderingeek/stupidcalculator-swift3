@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     @IBAction func numberClicked(_ sender: UIButton) {
         switch calculatorState {
             
-        // Continue entry of the first number. If its empty
+        // Continue entry of the first number. If its empty, start with the first digit, which is the button's tag
         case .FIRST_NUM_ENTRY:
             if(firstNumberString == "") {
                 firstNumberString = String(Double(sender.tag))
