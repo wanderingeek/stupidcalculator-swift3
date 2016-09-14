@@ -1,2 +1,2 @@
 # stupidcalculator-swift3
-A stupid calculator built using Swift 3, on Xcode 8 Beta 6. Pull requests are welcome.
+A stupid calculator built using Swift 3, on Xcode 8. Pull requests are welcome :-)
