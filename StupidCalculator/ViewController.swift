@@ -86,7 +86,7 @@ class ViewController: UIViewController {
             updateResultLabel(calculateResult: true)
             
             // Set result of previous operation as firstNumber, and reset second number
-            firstNumberString = String(finalResult)
+            firstNumberString = String(format: "%.2f", finalResult)
             secondNumberString = ""
             
             // Change state to operator entry
@@ -136,6 +136,13 @@ class ViewController: UIViewController {
         default: break
         }
     }
+    
+    // Called when the clear button is clicked
+    @IBAction func clearClicked(_ sender: UIButton) {
+        // Just reset the calculator
+        resetCalculator()
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -188,6 +195,8 @@ class ViewController: UIViewController {
         secondNumberString = ""
         finalResult = 0.0
         chosenOperator = .NOTHING
+        
+        resultLabel.text = "0.0"
     }
     
     
