@@ -30,16 +30,16 @@ enum Operator: String {
 
 // A dictionary that maps the tags of the operator buttons to their respective Operator Enum values
 let TAG_TO_OPERATOR_DICT: [Int: Operator] = [
-    10: Operator.ADDITION,
-    11: Operator.SUBTRACTION,
-    12: Operator.MULTIPLICATION,
-    13: Operator.DIVISION
+    10: .ADDITION,
+    11: .SUBTRACTION,
+    12: .MULTIPLICATION,
+    13: .DIVISION
 ]
 
 let OPERATOR_TO_STRING_DICT: [Operator: String] = [
-    Operator.ADDITION: "+",
-    Operator.SUBTRACTION: "-",
-    Operator.MULTIPLICATION: "*",
-    Operator.DIVISION: "/",
-    Operator.NOTHING: ""
+    .ADDITION: "+",
+    .SUBTRACTION: "-",
+    .MULTIPLICATION: "*",
+    .DIVISION: "/",
+    .NOTHING: ""
 ]
